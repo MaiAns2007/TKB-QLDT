@@ -1,0 +1,2072 @@
+{
+  "ds_tiet_trong_ngay": {
+    "1": {
+      "bat_dau": "07:00",
+      "ket_thuc": "07:50"
+    },
+    "2": {
+      "bat_dau": "08:00",
+      "ket_thuc": "08:50"
+    },
+    "3": {
+      "bat_dau": "09:00",
+      "ket_thuc": "09:50"
+    },
+    "4": {
+      "bat_dau": "10:00",
+      "ket_thuc": "10:50"
+    },
+    "5": {
+      "bat_dau": "11:00",
+      "ket_thuc": "11:50"
+    },
+    "6": {
+      "bat_dau": "12:00",
+      "ket_thuc": "12:50"
+    },
+    "7": {
+      "bat_dau": "13:00",
+      "ket_thuc": "13:50"
+    },
+    "8": {
+      "bat_dau": "14:00",
+      "ket_thuc": "14:50"
+    },
+    "9": {
+      "bat_dau": "15:00",
+      "ket_thuc": "15:50"
+    },
+    "10": {
+      "bat_dau": "16:00",
+      "ket_thuc": "16:50"
+    },
+    "11": {
+      "bat_dau": "17:00",
+      "ket_thuc": "17:50"
+    },
+    "12": {
+      "bat_dau": "18:00",
+      "ket_thuc": "18:50"
+    },
+    "13": {
+      "bat_dau": "19:00",
+      "ket_thuc": "19:50"
+    },
+    "14": {
+      "bat_dau": "20:00",
+      "ket_thuc": "20:50"
+    },
+    "15": {
+      "bat_dau": "21:00",
+      "ket_thuc": "21:50"
+    },
+    "16": {
+      "bat_dau": "22:00",
+      "ket_thuc": "22:05"
+    },
+    "17": {
+      "bat_dau": "22:06",
+      "ket_thuc": "22:11"
+    },
+    "18": {
+      "bat_dau": "22:12",
+      "ket_thuc": "22:17"
+    },
+    "19": {
+      "bat_dau": "22:18",
+      "ket_thuc": "22:23"
+    },
+    "20": {
+      "bat_dau": "22:24",
+      "ket_thuc": "22:29"
+    }
+  },
+  "ds_tuan": [
+    {
+      "tuan": 1,
+      "thong_tin": "Tuần 1 [từ ngày 10/08/2026 đến ngày 16/08/2026]",
+      "ngay_bat_dau": "10/08/2026",
+      "ngay_ket_thuc": "16/08/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-11",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-11",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-11",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-11",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-13",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-13",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-08-15",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-08-15",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 2,
+      "thong_tin": "Tuần 2 [từ ngày 17/08/2026 đến ngày 23/08/2026]",
+      "ngay_bat_dau": "17/08/2026",
+      "ngay_ket_thuc": "23/08/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-18",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-18",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-18",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-18",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-20",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-20",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-08-22",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-08-22",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 3,
+      "thong_tin": "Tuần 3 [từ ngày 24/08/2026 đến ngày 30/08/2026]",
+      "ngay_bat_dau": "24/08/2026",
+      "ngay_ket_thuc": "30/08/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-25",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-25",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-25",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-08-25",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-27",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-08-27",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 4,
+      "thong_tin": "Tuần 4 [từ ngày 31/08/2026 đến ngày 06/09/2026]",
+      "ngay_bat_dau": "31/08/2026",
+      "ngay_ket_thuc": "06/09/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-03",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-03",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-05",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-05",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 5,
+      "thong_tin": "Tuần 5 [từ ngày 07/09/2026 đến ngày 13/09/2026]",
+      "ngay_bat_dau": "07/09/2026",
+      "ngay_ket_thuc": "13/09/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "CODE.PTIT.EDU.VN-Cổng thực hành Online",
+          "ngay_hoc": "2026-09-07",
+          "thu": 2,
+          "tiet_bat_dau": 13,
+          "so_tiet": 4,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-08",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-08",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-08",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-08",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-10",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-10",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-12",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-12",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 6,
+      "thong_tin": "Tuần 6 [từ ngày 14/09/2026 đến ngày 20/09/2026]",
+      "ngay_bat_dau": "14/09/2026",
+      "ngay_ket_thuc": "20/09/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-15",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-15",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-15",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "606-A3-606-A3(HN)",
+          "ngay_hoc": "2026-09-17",
+          "thu": 5,
+          "tiet_bat_dau": 6,
+          "so_tiet": 4,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-17",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-17",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "701-A2-701-A2(HN)",
+          "ngay_hoc": "2026-09-18",
+          "thu": 6,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-19",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-19",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 7,
+      "thong_tin": "Tuần 7 [từ ngày 21/09/2026 đến ngày 27/09/2026]",
+      "ngay_bat_dau": "21/09/2026",
+      "ngay_ket_thuc": "27/09/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-22",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-22",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-22",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-24",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-24",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "701-A2-701-A2(HN)",
+          "ngay_hoc": "2026-09-25",
+          "thu": 6,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-26",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-09-26",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 8,
+      "thong_tin": "Tuần 8 [từ ngày 28/09/2026 đến ngày 04/10/2026]",
+      "ngay_bat_dau": "28/09/2026",
+      "ngay_ket_thuc": "04/10/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-09-29",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-29",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-09-29",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-01",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-01",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "701-A2-701-A2(HN)",
+          "ngay_hoc": "2026-10-02",
+          "thu": 6,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-03",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-03",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 9,
+      "thong_tin": "Tuần 9 [từ ngày 05/10/2026 đến ngày 11/10/2026]",
+      "ngay_bat_dau": "05/10/2026",
+      "ngay_ket_thuc": "11/10/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "CODE.PTIT.EDU.VN-Cổng thực hành Online",
+          "ngay_hoc": "2026-10-05",
+          "thu": 2,
+          "tiet_bat_dau": 13,
+          "so_tiet": 4,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-06",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-06",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-06",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-08",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-08",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "701-A2-701-A2(HN)",
+          "ngay_hoc": "2026-10-09",
+          "thu": 6,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-10",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-10",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 10,
+      "thong_tin": "Tuần 10 [từ ngày 12/10/2026 đến ngày 18/10/2026]",
+      "ngay_bat_dau": "12/10/2026",
+      "ngay_ket_thuc": "18/10/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-12",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-12",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-12",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-13",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-13",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-13",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-15",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-15",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "701-A2-701-A2(HN)",
+          "ngay_hoc": "2026-10-16",
+          "thu": 6,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-17",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-17",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 11,
+      "thong_tin": "Tuần 11 [từ ngày 19/10/2026 đến ngày 25/10/2026]",
+      "ngay_bat_dau": "19/10/2026",
+      "ngay_ket_thuc": "25/10/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-19",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-19",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-19",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-20",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-20",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-20",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "606-A3-606-A3(HN)",
+          "ngay_hoc": "2026-10-22",
+          "thu": 5,
+          "tiet_bat_dau": 6,
+          "so_tiet": 4,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-22",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-22",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-24",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-24",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 12,
+      "thong_tin": "Tuần 12 [từ ngày 26/10/2026 đến ngày 01/11/2026]",
+      "ngay_bat_dau": "26/10/2026",
+      "ngay_ket_thuc": "01/11/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-26",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-26",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-26",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-27",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-27",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-10-27",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-29",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-10-29",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-31",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-10-31",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-10-31",
+          "thu": 7,
+          "tiet_bat_dau": 15,
+          "so_tiet": 3,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 13,
+      "thong_tin": "Tuần 13 [từ ngày 02/11/2026 đến ngày 08/11/2026]",
+      "ngay_bat_dau": "02/11/2026",
+      "ngay_ket_thuc": "08/11/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-02",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-02",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "CODE.PTIT.EDU.VN-Cổng thực hành Online",
+          "ngay_hoc": "2026-11-02",
+          "thu": 2,
+          "tiet_bat_dau": 13,
+          "so_tiet": 4,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-03",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-03",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-03",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-05",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-05",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-07",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-07",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 14,
+      "thong_tin": "Tuần 14 [từ ngày 09/11/2026 đến ngày 15/11/2026]",
+      "ngay_bat_dau": "09/11/2026",
+      "ngay_ket_thuc": "15/11/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-09",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-09",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-09",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-10",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-10",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-10",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-10",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-12",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-12",
+          "thu": 5,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-14",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-14",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-14",
+          "thu": 7,
+          "tiet_bat_dau": 15,
+          "so_tiet": 3,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 15,
+      "thong_tin": "Tuần 15 [từ ngày 16/11/2026 đến ngày 22/11/2026]",
+      "ngay_bat_dau": "16/11/2026",
+      "ngay_ket_thuc": "22/11/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-16",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-16",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-16",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-17",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-17",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-17",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-17",
+          "thu": 3,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1269",
+          "ten_mon": "Xác suất thống kê",
+          "nhom": "08",
+          "giang_vien": "Phạm Thị Tuyết Nhung",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-19",
+          "thu": 5,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-21",
+          "thu": 7,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "ELE1309",
+          "ten_mon": "Điện tử số",
+          "nhom": "05",
+          "giang_vien": "Trần Thị Thanh Thủy",
+          "phong": "601-A2-601-A2(HN)",
+          "ngay_hoc": "2026-11-21",
+          "thu": 7,
+          "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 16,
+      "thong_tin": "Tuần 16 [từ ngày 23/11/2026 đến ngày 29/11/2026]",
+      "ngay_bat_dau": "23/11/2026",
+      "ngay_ket_thuc": "29/11/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-23",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-23",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-23",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-24",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-24",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-24",
+          "thu": 3,
+          "tiet_bat_dau": 10,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-28",
+          "thu": 7,
+          "tiet_bat_dau": 15,
+          "so_tiet": 2,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 17,
+      "thong_tin": "Tuần 17 [từ ngày 30/11/2026 đến ngày 06/12/2026]",
+      "ngay_bat_dau": "30/11/2026",
+      "ngay_ket_thuc": "06/12/2026",
+      "buoi_hoc": [
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-30",
+          "thu": 2,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "501-A2-501-A2(HN)",
+          "ngay_hoc": "2026-11-30",
+          "thu": 2,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "Trần Anh Tuấn",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-11-30",
+          "thu": 2,
+          "tiet_bat_dau": 4,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-12-01",
+          "thu": 3,
+          "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(HN)",
+          "ngay_hoc": "2026-12-01",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        }
+      ]
+    },
+    {
+      "tuan": 18,
+      "thong_tin": "Tuần 18 [từ ngày 07/12/2026 đến ngày 13/12/2026]",
+      "ngay_bat_dau": "07/12/2026",
+      "ngay_ket_thuc": "13/12/2026",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 19,
+      "thong_tin": "Tuần 19 [từ ngày 14/12/2026 đến ngày 20/12/2026]",
+      "ngay_bat_dau": "14/12/2026",
+      "ngay_ket_thuc": "20/12/2026",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 20,
+      "thong_tin": "Tuần 20 [từ ngày 21/12/2026 đến ngày 27/12/2026]",
+      "ngay_bat_dau": "21/12/2026",
+      "ngay_ket_thuc": "27/12/2026",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 21,
+      "thong_tin": "Tuần 21 [từ ngày 28/12/2026 đến ngày 03/01/2027]",
+      "ngay_bat_dau": "28/12/2026",
+      "ngay_ket_thuc": "03/01/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 22,
+      "thong_tin": "Tuần 22 [từ ngày 04/01/2027 đến ngày 10/01/2027]",
+      "ngay_bat_dau": "04/01/2027",
+      "ngay_ket_thuc": "10/01/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 23,
+      "thong_tin": "Tuần 23 [từ ngày 11/01/2027 đến ngày 17/01/2027]",
+      "ngay_bat_dau": "11/01/2027",
+      "ngay_ket_thuc": "17/01/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 24,
+      "thong_tin": "Tuần 24 [từ ngày 18/01/2027 đến ngày 24/01/2027]",
+      "ngay_bat_dau": "18/01/2027",
+      "ngay_ket_thuc": "24/01/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 25,
+      "thong_tin": "Tuần 25 [từ ngày 25/01/2027 đến ngày 31/01/2027]",
+      "ngay_bat_dau": "25/01/2027",
+      "ngay_ket_thuc": "31/01/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 26,
+      "thong_tin": "Tuần 26 [từ ngày 01/02/2027 đến ngày 07/02/2027]",
+      "ngay_bat_dau": "01/02/2027",
+      "ngay_ket_thuc": "07/02/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 27,
+      "thong_tin": "Tuần 27 [từ ngày 08/02/2027 đến ngày 14/02/2027]",
+      "ngay_bat_dau": "08/02/2027",
+      "ngay_ket_thuc": "14/02/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 28,
+      "thong_tin": "Tuần 28 [từ ngày 15/02/2027 đến ngày 21/02/2027]",
+      "ngay_bat_dau": "15/02/2027",
+      "ngay_ket_thuc": "21/02/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 29,
+      "thong_tin": "Tuần 29 [từ ngày 22/02/2027 đến ngày 28/02/2027]",
+      "ngay_bat_dau": "22/02/2027",
+      "ngay_ket_thuc": "28/02/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 30,
+      "thong_tin": "Tuần 30 [từ ngày 01/03/2027 đến ngày 07/03/2027]",
+      "ngay_bat_dau": "01/03/2027",
+      "ngay_ket_thuc": "07/03/2027",
+      "buoi_hoc": []
+    },
+    {
+      "tuan": 31,
+      "thong_tin": "Tuần 31 [từ ngày 08/03/2027 đến ngày 14/03/2027]",
+      "ngay_bat_dau": "08/03/2027",
+      "ngay_ket_thuc": "14/03/2027",
+      "buoi_hoc": []
+    }
+  ]
+}
