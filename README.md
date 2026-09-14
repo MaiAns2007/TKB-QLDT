@@ -10,7 +10,7 @@ riêng (GitHub Pages) — có thể mở trên điện thoại như 1 app.
 Vào repo trên GitHub → **Settings** → **Secrets and variables** → **Actions** →
 **New repository secret**, thêm 2 secret:
 
-- `QLDT_USERNAME` — tài khoản QLDT của bạn (ví dụ `n25dccn001b`)
+- `QLDT_USERNAME` — tài khoản QLDT của bạn 
 - `QLDT_PASSWORD` — mật khẩu QLDT của bạn
 
 ### Bước 2: Chạy thử workflow
