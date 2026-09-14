@@ -1,0 +1,39 @@
+name: Cap nhat TKB PTIT
+
+on:
+  schedule:
+    # Chay moi ngay luc 23:00 UTC = 06:00 sang gio Viet Nam
+    - cron: "0 23 * * *"
+  workflow_dispatch: {} # cho phep bam nut "Run workflow" chay thu cong tren GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cai thu vien
+        run: pip install requests
+
+      - name: Lay TKB moi nhat
+        env:
+          QLDT_USERNAME: ${{ secrets.QLDT_USERNAME }}
+          QLDT_PASSWORD: ${{ secrets.QLDT_PASSWORD }}
+        run: python scripts/fetch_tkb.py
+
+      - name: Commit va push neu co thay doi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/tkb.json
+          git diff --staged --quiet || git commit -m "Cap nhat TKB tu dong"
+          git push
