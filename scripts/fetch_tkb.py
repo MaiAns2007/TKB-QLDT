@@ -5,9 +5,6 @@ luu ra file JSON tinh de trang GitHub Pages doc va hien thi.
 Bien moi truong can co (dat trong GitHub Actions Secrets):
     QLDT_USERNAME  - tai khoan QLDT (vd: n25dccn001b)
     QLDT_PASSWORD  - mat khau QLDT
-
-Chay thu o may local (khong khuyen khich luu mat khau ra file .env commit len git):
-    QLDT_USERNAME=xxx QLDT_PASSWORD=xxx python scripts/fetch_tkb.py
 """
 
 import base64
@@ -23,8 +20,6 @@ LOGIN_PATH = "/api/pn-signin"
 TKB_PATH = "/api/sch/w-locdstkbtuanusertheohocky"
 
 # Hoc ky can lay TKB. Dinh dang: <nam bat dau><ky> vi du 20261 = HK1 nam hoc 2026-2027
-# Neu muon tu dong lay hoc ky hien tai, co the mo rong bang cach goi them
-# API "w-locdshockytkbuser" (danh sach hoc ky) va chon phan tu dau tien.
 HOC_KY = os.environ.get("QLDT_HOC_KY", "20261")
 
 
@@ -36,9 +31,7 @@ def b64_encode_json(obj: dict) -> str:
 
 def b64_decode_json(s: str) -> dict:
     """Giai ma nguoc lai chuoi base64 thanh dict."""
-    # Chuoi tren URL co the da bi urlencode, giai ma truoc khi base64-decode
     s = unquote(s)
-    # bu them padding '=' neu thieu (base64 yeu cau do dai chia het cho 4)
     padding = "=" * (-len(s) % 4)
     raw = base64.b64decode(s + padding)
     return json.loads(raw.decode("utf-8"))
@@ -46,9 +39,7 @@ def b64_decode_json(s: str) -> dict:
 
 def login(username: str, password: str) -> dict:
     """
-    Dang nhap QLDT, tra ve dict chua it nhat:
-        - access_token: JWT dung cho header Authorization
-        - session (requests.Session da luu cac cookie xsrf-*, .uat can thiet)
+    Dang nhap QLDT, tra ve dict chua access_token va session.
     """
     session = requests.Session()
 
@@ -60,11 +51,16 @@ def login(username: str, password: str) -> dict:
     }
     code = b64_encode_json(payload)
 
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": f"{BASE_URL}/"
+    }
+
     resp = session.get(
         f"{BASE_URL}{LOGIN_PATH}",
         params={"code": code, "gopage": "", "mgr": "1"},
-        allow_redirects=False,  # QUAN TRONG: khong tu dong theo redirect,
-                                 # vi thong tin can lay nam trong header Location
+        headers=headers,
+        allow_redirects=False,
         timeout=20,
     )
 
@@ -79,24 +75,18 @@ def login(username: str, password: str) -> dict:
             f"Dang nhap that bai hoac sai dinh dang: HTTP {resp.status_code}"
         )
 
-    location = resp.headers.get("Location", "")
+    location = resp.headers.get("Location") or resp.headers.get("location") or ""
     if not location:
-        # Thêm 2 dòng này trước dòng raise RuntimeError
-        print("--- DEBUG BẮT ĐẦU ---")
-        print("URL phản hồi:", res.url)
-        print("Nội dung phản hồi từ QLDT:", res.text[:1000]) # In 1000 ký tự đầu của trang web
-        print("--- DEBUG KẾT THÚC ---")
-
-        raise RuntimeError("Khong tim thay tham so CurrUser trong URL chuyen huong")
         raise RuntimeError("Khong tim thay header Location sau khi dang nhap")
 
     parsed = urlparse(location)
     query = parse_qs(parsed.query)
 
-    curr_user_raw = query.get("CurrUser", [None])[0]
-    if not curr_user_raw:
+    curr_user_list = query.get("CurrUser") or query.get("currUser")
+    if not curr_user_list or not curr_user_list[0]:
         raise RuntimeError("Khong tim thay tham so CurrUser trong URL chuyen huong")
 
+    curr_user_raw = curr_user_list[0]
     curr_user = b64_decode_json(curr_user_raw)
 
     if not curr_user.get("result"):
@@ -108,7 +98,7 @@ def login(username: str, password: str) -> dict:
 
     return {
         "access_token": access_token,
-        "session": session,  # da mang san cac cookie xsrf-*, .uat
+        "session": session,
         "user_info": curr_user,
     }
 
@@ -146,8 +136,7 @@ def fetch_tkb(auth: dict, hoc_ky: str) -> dict:
 
 def simplify_tkb(raw_data: dict) -> dict:
     """
-    Rut gon du lieu tho thanh cau truc de trang web hien thi,
-    chi giu lai cac truong thuc su can dung.
+    Rut gon du lieu tho thanh cau truc de trang web hien thi.
     """
     ds_tiet = {
         t["tiet"]: {"bat_dau": t["gio_bat_dau"], "ket_thuc": t["gio_ket_thuc"]}
@@ -165,8 +154,8 @@ def simplify_tkb(raw_data: dict) -> dict:
                     "nhom": mon.get("ma_nhom"),
                     "giang_vien": mon.get("ten_giang_vien"),
                     "phong": mon.get("ma_phong"),
-                    "ngay_hoc": mon.get("ngay_hoc", "")[:10],  # chi lay YYYY-MM-DD
-                    "thu": mon.get("thu_kieu_so"),  # 2=Thu2 ... 8=CN (kieu PTIT)
+                    "ngay_hoc": mon.get("ngay_hoc", "")[:10],
+                    "thu": mon.get("thu_kieu_so"),
                     "tiet_bat_dau": mon.get("tiet_bat_dau"),
                     "so_tiet": mon.get("so_tiet"),
                     "la_day_bu": mon.get("is_day_bu", False),
