@@ -68,6 +68,12 @@ def login(username: str, password: str) -> dict:
         timeout=20,
     )
 
+    print("--- DEBUG DANG NHAP QLDT ---", flush=True)
+    print("Status code:", resp.status_code, flush=True)
+    print("Header Location:", resp.headers.get("Location"), flush=True)
+    print("Response text (300 ký tự đầu):", resp.text[:300], flush=True)
+    print("----------------------------", flush=True)
+
     if resp.status_code not in (301, 302, 303, 307, 308):
         raise RuntimeError(
             f"Dang nhap that bai hoac sai dinh dang: HTTP {resp.status_code}"
