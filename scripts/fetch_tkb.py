@@ -79,10 +79,10 @@ def login(username: str, password: str) -> dict:
     if not location:
         raise RuntimeError("Khong tim thay header Location sau khi dang nhap")
 
-  # Xử lý cắt bỏ dấu '#' hoặc thay '#/home?' thành '?' để parse_qs đọc được query parameters
-target_url = location.replace("#/home?", "?").replace("#/", "?")
-parsed = urlparse(target_url)
-query = parse_qs(parsed.query)
+ # Xử lý cắt bỏ dấu '#' hoặc thay '#/home?' thành '?' để parse_qs đọc được query parameters
+    target_url = location.replace("#/home?", "?").replace("#/", "?")
+    parsed = urlparse(target_url)
+    query = parse_qs(parsed.query)
 
     curr_user_list = query.get("CurrUser") or query.get("currUser")
     if not curr_user_list or not curr_user_list[0]:
@@ -90,7 +90,6 @@ query = parse_qs(parsed.query)
 
     curr_user_raw = curr_user_list[0]
     curr_user = b64_decode_json(curr_user_raw)
-
     if not curr_user.get("result"):
         raise RuntimeError(f"Dang nhap that bai: {curr_user}")
 
