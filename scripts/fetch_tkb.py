@@ -256,6 +256,3 @@ print(f"Da luu TKB vao {out_path}")
 
 if __name__ == "__main__":
     main()
-
-if __name__ == "__main__":
-    main()
