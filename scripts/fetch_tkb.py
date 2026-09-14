@@ -79,8 +79,10 @@ def login(username: str, password: str) -> dict:
     if not location:
         raise RuntimeError("Khong tim thay header Location sau khi dang nhap")
 
-    parsed = urlparse(location)
-    query = parse_qs(parsed.query)
+  # Xử lý cắt bỏ dấu '#' hoặc thay '#/home?' thành '?' để parse_qs đọc được query parameters
+target_url = location.replace("#/home?", "?").replace("#/", "?")
+parsed = urlparse(target_url)
+query = parse_qs(parsed.query)
 
     curr_user_list = query.get("CurrUser") or query.get("currUser")
     if not curr_user_list or not curr_user_list[0]:
