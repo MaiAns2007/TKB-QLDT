@@ -8,6 +8,7 @@ Bien moi truong can co (dat trong GitHub Actions Secrets):
 """
 
 import base64
+from datetime import datetime
 import json
 import os
 import sys
@@ -174,6 +175,55 @@ def simplify_tkb(raw_data: dict) -> dict:
 
     return {"ds_tiet_trong_ngay": ds_tiet, "ds_tuan": tuan_list}
 
+def send_discord_notification(simplified_data: dict):
+    """Gui thong bao lich hoc ngay hom nay ve Discord Webhook."""
+    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
+    if not webhook_url:
+        print("Chua cau hinh DISCORD_WEBHOOK_URL, bo qua gui thong bao.")
+        return
+
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    mon_hom_nay = []
+
+    # Loc mon hoc theo ngay hien tai
+    for tuan in simplified_data.get("ds_tuan", []):
+        for mon in tuan.get("buoi_hoc", []):
+            if mon.get("ngay_hoc") == today_str:
+                mon_hom_nay.append(mon)
+
+    # Soan noi dung Embed
+    if not mon_hom_nay:
+        description = "🎉 **Hom nay ban khong co lich hoc! Thoa suc nghi ngoi.**"
+        color = 3066993  # Xanh la
+    else:
+        description = ""
+        for idx, m in enumerate(mon_hom_nay, 1):
+            description += (
+                f"**{idx}. {m['ten_mon']}**\n"
+                f"⏱ **Tiet:** {m['tiet_bat_dau']} ({m['so_tiet']} tiet)\n"
+                f"🏫 **Phong:** {m['phong']}\n"
+                f"👨‍🏫 **GV:** {m['giang_vien'] or 'Chua cap nhat'}\n\n"
+            )
+        color = 15158332  # Cam/Do
+
+    payload = {
+        "username": "TKB PTIT Bot",
+        "embeds": [
+            {
+                "title": f"📅 LỊCH HỌC HÔM NAY ({today_str})",
+                "description": description,
+                "color": color,
+                "footer": {"text": "Tu dong cap nhat tu QLDT PTIT"}
+            }
+        ]
+    }
+
+    try:
+        resp = requests.post(webhook_url, json=payload, timeout=10)
+        resp.raise_for_status()
+        print("Da gui thong bao Discord thanh cong!")
+    except Exception as e:
+        print(f"Loi gui thong bao Discord: {e}")
 
 def main():
     username = os.environ.get("QLDT_USERNAME")
@@ -198,7 +248,14 @@ def main():
         json.dump(simplified, f, ensure_ascii=False, indent=2)
 
     print(f"Da luu TKB vao {out_path}")
+print(f"Da luu TKB vao {out_path}")
 
+    # Gửi thông báo đến Discord (THÊM DÒNG NÀY)
+    send_discord_notification(simplified)
+
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
