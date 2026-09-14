@@ -2,6 +2,7 @@
 
 Tự động đăng nhập QLDT PTIT, lấy thời khóa biểu, và hiển thị trên 1 trang web
 riêng (GitHub Pages) — có thể mở trên điện thoại như 1 app.
+Thông báo lịch học hôm nay vào mỗi 6h sáng
 
 ## Cách cài đặt
 
