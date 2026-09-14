@@ -22,3 +22,4 @@ bấm **"Run workflow"** để chạy thử ngay.
 
 Vào **Settings** → **Pages** → mục **Source**, chọn nhánh `main` và thư mục
 `/docs`. Sau vài phút, trang sẽ có địa chỉ dạng:
+https://<tên-github-của-bạn>.github.io/TKB-QLDT/
