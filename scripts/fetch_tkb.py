@@ -10,7 +10,7 @@ Bien moi truong can co (dat trong GitHub Actions Secrets):
 """
 
 import base64
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import json
 import os
 import sys
@@ -176,7 +176,6 @@ def simplify_tkb(raw_data: dict) -> dict:
 
     return {"ds_tiet_trong_ngay": ds_tiet, "ds_tuan": tuan_list}
 
-
 def send_discord_notification(simplified_data: dict):
     """Gui thong bao lich hoc ngay hom nay ve Discord Webhook."""
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
@@ -184,7 +183,9 @@ def send_discord_notification(simplified_data: dict):
         print("Chua cau hinh DISCORD_WEBHOOK_URL, bo qua gui thong bao.")
         return
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    # Lấy ngày hiện tại theo đúng giờ Việt Nam (UTC+7)
+    vn_tz = timezone(timedelta(hours=7))
+    today_str = datetime.now(vn_tz).strftime("%Y-%m-%d")
     mon_hom_nay = []
 
     # Loc mon hoc theo ngay hien tai
@@ -195,18 +196,18 @@ def send_discord_notification(simplified_data: dict):
 
     # Soan noi dung Embed
     if not mon_hom_nay:
-        description = "🎉 **Hom nay ban khong co lich hoc! Thoa suc nghi ngoi.**"
-        color = 3066993  # Xanh la
+        description = "🎉 **Hôm nay bạn không có lịch học! Thỏa sức nghỉ ngơi.**"
+        color = 3066993  # Xanh lá
     else:
         description = ""
         for idx, m in enumerate(mon_hom_nay, 1):
             description += (
                 f"**{idx}. {m['ten_mon']}**\n"
-                f"⏱ **Tiet:** {m['tiet_bat_dau']} ({m['so_tiet']} tiet)\n"
-                f"🏫 **Phong:** {m['phong']}\n"
-                f"👨‍🏫 **GV:** {m['giang_vien'] or 'Chua cap nhat'}\n\n"
+                f"⏱ **Tiết:** {m['tiet_bat_dau']} ({m['so_tiet']} tiết)\n"
+                f"🏫 **Phòng:** {m['phong']}\n"
+                f"👨‍🏫 **GV:** {m['giang_vien'] or 'Chưa cập nhật'}\n\n"
             )
-        color = 15158332  # Cam/Do
+        color = 15158332  # Cam/Đỏ
 
     payload = {
         "username": "TKB PTIT Bot",
@@ -215,7 +216,7 @@ def send_discord_notification(simplified_data: dict):
                 "title": f"📅 LỊCH HỌC HÔM NAY ({today_str})",
                 "description": description,
                 "color": color,
-                "footer": {"text": "Tu dong cap nhat tu QLDT PTIT"}
+                "footer": {"text": "Tự động cập nhật từ QLDT PTIT"}
             }
         ]
     }
