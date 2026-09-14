@@ -211,6 +211,7 @@ def send_discord_notification(simplified_data: dict):
 
     payload = {
         "username": "TKB PTIT Bot",
+        "content": "@everyone",
         "embeds": [
             {
                 "title": f"📅 LỊCH HỌC HÔM NAY ({today_str})",
