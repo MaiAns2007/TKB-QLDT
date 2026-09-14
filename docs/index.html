@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TKB PTIT</title>
+<style>
+  :root {
+    --red: #c0392b;
+    --bg: #f5f5f3;
+    --card: #ffffff;
+    --text: #222;
+    --muted: #777;
+    --border: #e2e2e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding-bottom: 40px;
+  }
+  header {
+    background: var(--red);
+    color: white;
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  .week-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 56px;
+    z-index: 9;
+  }
+  .week-nav button {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .week-nav select {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+  }
+  main { padding: 12px 16px; max-width: 700px; margin: 0 auto; }
+  .day-block { margin-bottom: 16px; }
+  .day-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--red);
+    margin: 0 0 8px 2px;
+  }
+  .class-card {
+    background: var(--card);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    margin-bottom: 8px;
+  }
+  .class-card .mon { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+  .class-card .meta { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    background: #fdecea;
+    color: var(--red);
+    border-radius: 6px;
+    padding: 1px 6px;
+    margin-left: 6px;
+  }
+  .empty-day { color: var(--muted); font-size: 13px; padding: 4px 2px; }
+  .loading, .error { text-align: center; padding: 40px 20px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Thời khóa biểu</h1>
+</header>
+
+<div class="week-nav">
+  <button id="prevWeek" aria-label="Tuần trước">←</button>
+  <select id="weekSelect"></select>
+  <button id="nextWeek" aria-label="Tuần sau">→</button>
+</div>
+
+<main id="content">
+  <div class="loading">Đang tải dữ liệu...</div>
+</main>
+
+<script>
+const THU_LABEL = { 2: "Thứ 2", 3: "Thứ 3", 4: "Thứ 4", 5: "Thứ 5", 6: "Thứ 6", 7: "Thứ 7", 8: "Chủ nhật" };
+const THU_ORDER = [2, 3, 4, 5, 6, 7, 8];
+
+let tkbData = null;
+let currentWeekIndex = 0;
+
+async function loadData() {
+  try {
+    const res = await fetch("tkb.json?_=" + Date.now());
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    tkbData = await res.json();
+
+    populateWeekSelect();
+    // Mac dinh chon tuan co ngay hom nay, neu khong tim thay thi chon tuan dau tien
+    const todayIdx = findWeekIndexForToday();
+    currentWeekIndex = todayIdx >= 0 ? todayIdx : 0;
+    document.getElementById("weekSelect").value = currentWeekIndex;
+    renderWeek(currentWeekIndex);
+  } catch (err) {
+    document.getElementById("content").innerHTML =
+      '<div class="error">Không tải được dữ liệu TKB.<br>' + err.message + "</div>";
+  }
+}
+
+function findWeekIndexForToday() {
+  const today = new Date().toISOString().slice(0, 10).split("-").reverse().join("/");
+  return tkbData.ds_tuan.findIndex((w) => {
+    const [d1] = parseVNDate(w.ngay_bat_dau);
+    const [d2] = parseVNDate(w.ngay_ket_thuc);
+    const now = new Date();
+    return now >= d1 && now <= d2;
+  });
+}
+
+function parseVNDate(str) {
+  // dd/mm/yyyy -> Date object (dat gio 23:59 cho ngay ket thuc de bao gom ca ngay)
+  const [d, m, y] = str.split("/").map(Number);
+  return [new Date(y, m - 1, d)];
+}
+
+function populateWeekSelect() {
+  const sel = document.getElementById("weekSelect");
+  sel.innerHTML = "";
+  tkbData.ds_tuan.forEach((w, idx) => {
+    const opt = document.createElement("option");
+    opt.value = idx;
+    opt.textContent = `Tuần ${w.tuan} (${w.ngay_bat_dau} - ${w.ngay_ket_thuc})`;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener("change", (e) => {
+    currentWeekIndex = parseInt(e.target.value, 10);
+    renderWeek(currentWeekIndex);
+  });
+}
+
+function renderWeek(idx) {
+  const week = tkbData.ds_tuan[idx];
+  const content = document.getElementById("content");
+  content.innerHTML = "";
+
+  const byDay = {};
+  THU_ORDER.forEach((t) => (byDay[t] = []));
+  week.buoi_hoc.forEach((b) => {
+    if (byDay[b.thu]) byDay[b.thu].push(b);
+  });
+
+  THU_ORDER.forEach((thu) => {
+    const list = byDay[thu].sort((a, b) => a.tiet_bat_dau - b.tiet_bat_dau);
+    const block = document.createElement("div");
+    block.className = "day-block";
+
+    const dateStr = list[0] ? formatDate(list[0].ngay_hoc) : "";
+    block.innerHTML = `<div class="day-title">${THU_LABEL[thu]}${dateStr ? " (" + dateStr + ")" : ""}</div>`;
+
+    if (list.length === 0) {
+      block.innerHTML += '<div class="empty-day">Không có lịch học</div>';
+    } else {
+      list.forEach((b) => {
+        const gioBatDau = tkbData.ds_tiet_trong_ngay[b.tiet_bat_dau]?.bat_dau || "";
+        const tietKetThuc = b.tiet_bat_dau + b.so_tiet - 1;
+        const gioKetThuc = tkbData.ds_tiet_trong_ngay[tietKetThuc]?.ket_thuc || "";
+
+        const card = document.createElement("div");
+        card.className = "class-card";
+        card.innerHTML = `
+          <div class="mon">${b.ten_mon}${b.la_day_bu ? '<span class="badge">Dạy bù</span>' : ""}</div>
+          <div class="meta">
+            ${gioBatDau} - ${gioKetThuc} (Tiết ${b.tiet_bat_dau}-${tietKetThuc})<br>
+            Phòng: ${b.phong || "?"} · Nhóm: ${b.nhom || "?"}<br>
+            GV: ${b.giang_vien || "?"}
+          </div>`;
+        block.appendChild(card);
+      });
+    }
+    content.appendChild(block);
+  });
+}
+
+function formatDate(isoDate) {
+  if (!isoDate) return "";
+  const [y, m, d] = isoDate.split("-");
+  return `${d}/${m}`;
+}
+
+document.getElementById("prevWeek").addEventListener("click", () => {
+  if (currentWeekIndex > 0) {
+    currentWeekIndex--;
+    document.getElementById("weekSelect").value = currentWeekIndex;
+    renderWeek(currentWeekIndex);
+  }
+});
+document.getElementById("nextWeek").addEventListener("click", () => {
+  if (currentWeekIndex < tkbData.ds_tuan.length - 1) {
+    currentWeekIndex++;
+    document.getElementById("weekSelect").value = currentWeekIndex;
+    renderWeek(currentWeekIndex);
+  }
+});
+
+loadData();
+</script>
+</body>
+</html>
