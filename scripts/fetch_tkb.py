@@ -251,7 +251,7 @@ def main():
 print(f"Da luu TKB vao {out_path}")
 
     # Gửi thông báo đến Discord (THÊM DÒNG NÀY)
-    send_discord_notification(simplified)
+send_discord_notification(simplified)
 
 
 if __name__ == "__main__":
