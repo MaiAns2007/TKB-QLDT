@@ -75,6 +75,13 @@ def login(username: str, password: str) -> dict:
 
     location = resp.headers.get("Location", "")
     if not location:
+        # Thêm 2 dòng này trước dòng raise RuntimeError
+        print("--- DEBUG BẮT ĐẦU ---")
+        print("URL phản hồi:", res.url)
+        print("Nội dung phản hồi từ QLDT:", res.text[:1000]) # In 1000 ký tự đầu của trang web
+        print("--- DEBUG KẾT THÚC ---")
+
+        raise RuntimeError("Khong tim thay tham so CurrUser trong URL chuyen huong")
         raise RuntimeError("Khong tim thay header Location sau khi dang nhap")
 
     parsed = urlparse(location)
