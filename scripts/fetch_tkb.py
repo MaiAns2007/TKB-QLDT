@@ -1,10 +1,12 @@
 """
 Script tu dong dang nhap QLDT PTIT va lay Thoi khoa bieu (TKB) toan hoc ky,
-luu ra file JSON tinh de trang GitHub Pages doc va hien thi.
+luu ra file JSON tinh de trang GitHub Pages doc va hien thi,
+dong thoi gui thong bao lich hoc trong ngay sang Discord.
 
 Bien moi truong can co (dat trong GitHub Actions Secrets):
-    QLDT_USERNAME  - tai khoan QLDT (vd: n25dccn001b)
-    QLDT_PASSWORD  - mat khau QLDT
+    QLDT_USERNAME        - tai khoan QLDT (vd: n25dccn001b)
+    QLDT_PASSWORD        - mat khau QLDT
+    DISCORD_WEBHOOK_URL  - Link Webhook kenh Discord nhận thông báo
 """
 
 import base64
@@ -20,7 +22,6 @@ BASE_URL = "https://qldt.ptit.edu.vn"
 LOGIN_PATH = "/api/pn-signin"
 TKB_PATH = "/api/sch/w-locdstkbtuanusertheohocky"
 
-# Hoc ky can lay TKB. Dinh dang: <nam bat dau><ky> vi du 20261 = HK1 nam hoc 2026-2027
 HOC_KY = os.environ.get("QLDT_HOC_KY", "20261")
 
 
@@ -80,7 +81,6 @@ def login(username: str, password: str) -> dict:
     if not location:
         raise RuntimeError("Khong tim thay header Location sau khi dang nhap")
 
- # Xử lý cắt bỏ dấu '#' hoặc thay '#/home?' thành '?' để parse_qs đọc được query parameters
     target_url = location.replace("#/home?", "?").replace("#/", "?")
     parsed = urlparse(target_url)
     query = parse_qs(parsed.query)
@@ -91,6 +91,7 @@ def login(username: str, password: str) -> dict:
 
     curr_user_raw = curr_user_list[0]
     curr_user = b64_decode_json(curr_user_raw)
+
     if not curr_user.get("result"):
         raise RuntimeError(f"Dang nhap that bai: {curr_user}")
 
@@ -175,6 +176,7 @@ def simplify_tkb(raw_data: dict) -> dict:
 
     return {"ds_tiet_trong_ngay": ds_tiet, "ds_tuan": tuan_list}
 
+
 def send_discord_notification(simplified_data: dict):
     """Gui thong bao lich hoc ngay hom nay ve Discord Webhook."""
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
@@ -225,6 +227,7 @@ def send_discord_notification(simplified_data: dict):
     except Exception as e:
         print(f"Loi gui thong bao Discord: {e}")
 
+
 def main():
     username = os.environ.get("QLDT_USERNAME")
     password = os.environ.get("QLDT_PASSWORD")
@@ -248,10 +251,9 @@ def main():
         json.dump(simplified, f, ensure_ascii=False, indent=2)
 
     print(f"Da luu TKB vao {out_path}")
-print(f"Da luu TKB vao {out_path}")
 
-    # Gửi thông báo đến Discord (THÊM DÒNG NÀY)
-send_discord_notification(simplified)
+    # Gửi thông báo đến Discord
+    send_discord_notification(simplified)
 
 
 if __name__ == "__main__":
