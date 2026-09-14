@@ -28,6 +28,7 @@ jobs:
         env:
           QLDT_USERNAME: ${{ secrets.QLDT_USERNAME }}
           QLDT_PASSWORD: ${{ secrets.QLDT_PASSWORD }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}  # <--- ĐÃ BỔ SUNG DÒNG NÀY
         run: python scripts/fetch_tkb.py
 
       - name: Commit va push neu co thay doi
