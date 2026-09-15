@@ -2,7 +2,7 @@ name: Cap nhat TKB PTIT
 
 on:
   schedule:
-    # Chay moi ngay luc 23:00 UTC = 06:00 sang gio Viet Nam
+    # Chay moi ngay luc 23:00 UTC = 06:00 sang gio VietNam
     - cron: "21 21 * * *"
   workflow_dispatch: {} # cho phep bam nut "Run workflow" chay thu cong tren GitHub
 
