@@ -841,6 +841,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "TRANS-Phòng học online",
+          "ngay_hoc": "2026-10-02",
+          "thu": 6,
+          "tiet_bat_dau": 13,
+          "so_tiet": 3,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "ELE1309",
           "ten_mon": "Điện tử số",
           "nhom": "05",
@@ -1093,6 +1105,18 @@
           "ngay_hoc": "2026-10-16",
           "thu": 6,
           "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "SKD1101",
+          "ten_mon": "Kỹ năng thuyết trình",
+          "nhom": "21",
+          "giang_vien": "Tạ Quốc Đạt",
+          "phong": "TRANS-Phòng học online",
+          "ngay_hoc": "2026-10-16",
+          "thu": 6,
+          "tiet_bat_dau": 13,
           "so_tiet": 2,
           "la_day_bu": false
         },
