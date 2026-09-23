@@ -49,5 +49,15 @@ Hệ thống sử dụng **GitHub Actions** để tự động cào thời khóa
 
 ---
 
+### 4. Hướng dẫn lấy Link Discord Webhook (Nhận thông báo)
+
+Để Bot có thể tự động bắn tin nhắn nhắc học vào ứng dụng Discord của bạn, hãy tạo Webhook theo các bước sau:
+
+1. **Mở Discord** $\rightarrow$ Vào máy chủ (Server) của bạn $\rightarrow$ Chọn kênh chữ (Text Channel) bạn muốn nhận thông báo thời khóa biểu.
+2. Bấm vào biểu tượng **Bánh răng ⚙️ (Edit Channel)** ngay bên cạnh tên kênh.
+3. Chọn mục **Integrations (Tích hợp)** $\rightarrow$ Bấm chọn **Webhooks** (hoặc **Create Webhook**).
+4. Bấm **New Webhook**, bạn có thể đổi tên Bot (ví dụ: *PTIT Bot TKB*) và thay ảnh đại diện cho Bot nếu muốn.
+5. Bấm nút **Copy Webhook URL**.
+6. Dán đường link vừa sao chép này vào phần **Secrets** của GitHub dưới tên biến `DISCORD_WEBHOOK_URL` (như hướng dẫn ở Mục 1).
 
 
