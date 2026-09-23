@@ -28,6 +28,26 @@ https://<tên-github-của-bạn>.github.io/TKB-QLDT/
 ---
 
 ### 🔔 Hướng dẫn cài đặt nhận thông báo trên Điện thoại
+### 1. Cách xem Thời khóa biểu trên điện thoại (Mobile)
+
+Sau khi bật GitHub Pages, bạn mở trình duyệt trên điện thoại (Safari đối với iPhone hoặc Chrome đối với Android) và truy cập vào đường link GitHub Pages của bạn (`https://<tên-github-của-bạn>.github.io/TKB-QLDT/`).
+
+Để xem nhanh như một ứng dụng thực thụ mà **không cần mở lại trình duyệt hay dán link nhiều lần**:
+
+#### 📱 Đối với iPhone (Safari)
+1. Mở trang web bằng trình duyệt **Safari**.
+2. Bấm vào nút **Chia sẻ** (biểu tượng hình ô vuông có mũi tên chỉ lên ở thanh công cụ dưới màn hình).
+3. Cuộn xuống chọn **Thêm vào MH chính** (*Add to Home Screen*).
+4. Đặt tên ứng dụng (ví dụ: *TKB PTIT*) rồi bấm **Thêm** (*Add*).
+
+#### 🤖 Đối với Android (Google Chrome)
+1. Mở trang web bằng trình duyệt **Chrome**.
+2. Bấm vào biểu tượng **3 dấu chấm ⋮** ở góc trên bên phải màn hình.
+3. Chọn **Thêm vào màn hình chính** (*Add to Home screen*) hoặc **Cài đặt ứng dụng** (*Install app*).
+4. Bấm **Thêm** để hoàn tất.
+
+> 💡 **Mẹo:** Biểu tượng ứng dụng Thời khóa biểu sẽ xuất hiện ngay trên màn hình chính điện thoại. Mỗi lần cần xem phòng học hay ca học, bạn chỉ cần bấm vào biểu tượng này để mở ngay lập tức (hỗ trợ xem Offline ngay cả khi không có mạng).
+
 ## 🛠️ Hướng Dẫn Cài Đặt & Vận Hành Bot Tự Động
 
 Hệ thống sử dụng **GitHub Actions** để tự động cào thời khóa biểu từ cổng QLDT PTIT và gửi thông báo nhắc nhở về Discord hoàn toàn miễn phí.
