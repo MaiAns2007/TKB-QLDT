@@ -28,31 +28,62 @@ https://<tên-github-của-bạn>.github.io/TKB-QLDT/
 ---
 
 ### 🔔 Hướng dẫn cài đặt nhận thông báo trên Điện thoại
+## 🛠️ Hướng Dẫn Cài Đặt & Vận Hành Bot Tự Động
 
-Để đảm bảo thông báo từ Bot luôn nổ chuông và hiển thị màn hình khóa lúc 6:00 sáng, bạn cần kiểm tra 3 cài đặt sau:
+Hệ thống sử dụng **GitHub Actions** để tự động cào thời khóa biểu từ cổng QLDT PTIT và gửi thông báo nhắc nhở về Discord hoàn toàn miễn phí.
 
-#### 1. Cấu hình thông báo Kênh trên Discord (Mobile)
-Mặc định Discord sẽ tắt tiếng các tin nhắn không tag `@mention`.
-1. Mở ứng dụng Discord trên điện thoại $\rightarrow$ Truy cập kênh **`#lich-hoc`**.
-2. Nhấp vào **Tên kênh `#lich-hoc`** ở góc trên cùng.
-3. Chọn **Thông báo (Notifications)** $\rightarrow$ Chuyển sang **Tất cả các tin nhắn (All Messages)**.
-4. Đảm bảo mục **Tắt âm máy chủ (Mute Server)** đang ở trạng thái Tắt.
+---
 
-#### 2. Cấp quyền Thông báo hệ điều hành (iOS / Android)
-* **Đối với iPhone (iOS):**
-  * Vào **Cài đặt (Settings)** điện thoại $\rightarrow$ **Thông báo** $\rightarrow$ **Discord**.
-  * Bật **Cho phép thông báo** và tích đủ 3 kiểu cảnh báo: *Màn hình khóa, Trung tâm thông báo, Biểu ngữ*.
-  * Kiểm tra và tắt chế độ **Không làm phiền (Do Not Disturb)** hoặc thêm Discord vào danh sách ngoại lệ của chế độ **Tập trung (Focus)**.
-* **Đối với Android:**
-  * Vào **Cài đặt** $\rightarrow$ **Ứng dụng** $\rightarrow$ **Discord** $\rightarrow$ **Thông báo** $\rightarrow$ Bật **Cho phép thông báo**.
-  * Tắt chế độ **Tối ưu hóa pin (Tiết kiệm pin)** cho ứng dụng Discord để tránh Android dừng tiến trình chạy ngầm.
+### 1. Cấu hình GitHub Secrets (Bảo mật)
 
-#### 3. Ép nổ thông báo bằng Tag `@everyone` (Tùy chọn)
-Nếu muốn Bot phát âm thanh cảnh báo ngay cả khi đang mở ứng dụng, bổ sung dòng `"content": "@everyone"` vào `payload` trong file `scripts/fetch_tkb.py`:
+Để Bot có thể đăng nhập vào QLDT và gửi thông báo Discord, bạn cần thêm các thông tin đăng nhập vào phần **Secrets** của Repository (tránh bị lộ mật khẩu):
 
-```python
-    payload = {
-        "username": "TKB PTIT Bot",
-        "content": "@everyone",  # Ép nổ chuông và đẩy notification lập tức
-        "embeds": [...]
-    }
+1. Vào Repository trên GitHub $\rightarrow$ **Settings** $\rightarrow$ **Secrets and variables** $\rightarrow$ **Actions**.
+2. Bấm nút **New repository secret** và thêm lần lượt 3 biến sau:
+
+| Tên Secret | Giá trị (Value) |
+| :--- | :--- |
+| `QLDT_USERNAME` | Mã sinh viên PTIT của bạn (ví dụ: `B21DCCNxxx`) |
+| `QLDT_PASSWORD` | Mật khẩu đăng nhập trang QLDT |
+| `DISCORD_WEBHOOK_URL` | Link Discord Webhook của kênh bạn muốn nhận thông báo |
+
+---
+
+### 2. File Cấu Hình Workflow (`.github/workflows/fetch-tkb.yml`)
+
+Đảm bảo file `.github/workflows/fetch-tkb.yml` trên repo của bạn có cấu hình `cron` chạy tự động hàng ngày và cho phép chạy thủ công (`workflow_dispatch`):
+
+```yaml
+name: Cap nhat TKB PTIT
+
+on:
+  schedule:
+    # Chạy tự động lúc 04:21 AM giờ Việt Nam (21:21 UTC ngày hôm trước)
+    - cron: "21 21 * * *"
+  workflow_dispatch: {} # Cho phép bấm nút "Run workflow" chạy thủ công
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cài thư viện cần thiết
+        run: pip install requests
+
+      - name: Lấy TKB mới nhất & Gửi thông báo
+        env:
+          QLDT_USERNAME: ${{ secrets.QLDT_USERNAME }}
+          QLDT_PASSWORD: ${{ secrets.QLDT_PASSWORD }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/fetch_tkb.py
+
