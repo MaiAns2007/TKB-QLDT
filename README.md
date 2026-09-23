@@ -49,7 +49,7 @@ Hệ thống sử dụng **GitHub Actions** để tự động cào thời khóa
 
 ---
 
-### 4. Hướng dẫn lấy Link Discord Webhook (Nhận thông báo)
+### 2. Hướng dẫn lấy Link Discord Webhook (Nhận thông báo)
 
 Để Bot có thể tự động bắn tin nhắn nhắc học vào ứng dụng Discord của bạn, hãy tạo Webhook theo các bước sau:
 
