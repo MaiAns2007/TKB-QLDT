@@ -49,41 +49,5 @@ Hệ thống sử dụng **GitHub Actions** để tự động cào thời khóa
 
 ---
 
-### 2. File Cấu Hình Workflow (`.github/workflows/fetch-tkb.yml`)
 
-Đảm bảo file `.github/workflows/fetch-tkb.yml` trên repo của bạn có cấu hình `cron` chạy tự động hàng ngày và cho phép chạy thủ công (`workflow_dispatch`):
-
-```yaml
-name: Cap nhat TKB PTIT
-
-on:
-  schedule:
-    # Chạy tự động lúc 04:21 AM giờ Việt Nam (21:21 UTC ngày hôm trước)
-    - cron: "21 21 * * *"
-  workflow_dispatch: {} # Cho phép bấm nút "Run workflow" chạy thủ công
-
-permissions:
-  contents: write
-
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Cài thư viện cần thiết
-        run: pip install requests
-
-      - name: Lấy TKB mới nhất & Gửi thông báo
-        env:
-          QLDT_USERNAME: ${{ secrets.QLDT_USERNAME }}
-          QLDT_PASSWORD: ${{ secrets.QLDT_PASSWORD }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python scripts/fetch_tkb.py
 
