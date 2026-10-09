@@ -1037,6 +1037,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-10-12",
+          "thu": 2,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "INT1306",
           "ten_mon": "Cấu trúc dữ liệu và giải thuật",
           "nhom": "05",
@@ -1141,6 +1153,18 @@
           "ngay_hoc": "2026-10-17",
           "thu": 7,
           "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-10-18",
+          "thu": 8,
+          "tiet_bat_dau": 18,
           "so_tiet": 1,
           "la_day_bu": false
         }
@@ -1329,6 +1353,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-10-26",
+          "thu": 2,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "INT1306",
           "ten_mon": "Cấu trúc dữ liệu và giải thuật",
           "nhom": "05",
@@ -1423,6 +1459,18 @@
           "tiet_bat_dau": 15,
           "so_tiet": 3,
           "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-01",
+          "thu": 8,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
         }
       ]
     },
@@ -1469,6 +1517,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-02",
+          "thu": 2,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "INT1306",
           "ten_mon": "Cấu trúc dữ liệu và giải thuật",
           "nhom": "05",
@@ -1549,6 +1609,18 @@
           "ngay_hoc": "2026-11-07",
           "thu": 7,
           "tiet_bat_dau": 12,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-08",
+          "thu": 8,
+          "tiet_bat_dau": 18,
           "so_tiet": 1,
           "la_day_bu": false
         }
@@ -1749,6 +1821,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-16",
+          "thu": 2,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "INT1306",
           "ten_mon": "Cấu trúc dữ liệu và giải thuật",
           "nhom": "05",
@@ -1831,6 +1915,18 @@
           "tiet_bat_dau": 12,
           "so_tiet": 1,
           "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-22",
+          "thu": 8,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
+          "la_day_bu": false
         }
       ]
     },
@@ -1874,6 +1970,18 @@
           "thu": 2,
           "tiet_bat_dau": 4,
           "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-23",
+          "thu": 2,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
           "la_day_bu": false
         },
         {
@@ -1922,6 +2030,18 @@
           "thu": 7,
           "tiet_bat_dau": 15,
           "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "BAS1152",
+          "ten_mon": "Chủ nghĩa xã hội khoa học",
+          "nhom": "10",
+          "giang_vien": "Đỗ Thu Hường",
+          "phong": "LMS-Học trực tuyến qua hệ thống LMS",
+          "ngay_hoc": "2026-11-29",
+          "thu": 8,
+          "tiet_bat_dau": 18,
+          "so_tiet": 1,
           "la_day_bu": false
         }
       ]
