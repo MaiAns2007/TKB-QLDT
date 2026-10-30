@@ -2099,18 +2099,6 @@
           "tiet_bat_dau": 1,
           "so_tiet": 2,
           "la_day_bu": false
-        },
-        {
-          "ma_mon": "INT1306",
-          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
-          "nhom": "05",
-          "giang_vien": "Phạm Tuấn Minh",
-          "phong": "401-A2-401-A2(CS Hà Đông)",
-          "ngay_hoc": "2026-12-01",
-          "thu": 3,
-          "tiet_bat_dau": 3,
-          "so_tiet": 1,
-          "la_day_bu": false
         }
       ]
     },
