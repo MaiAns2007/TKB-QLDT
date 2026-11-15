@@ -2009,6 +2009,18 @@
           "la_day_bu": false
         },
         {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "8888888813-Phòng học 13",
+          "ngay_hoc": "2026-11-25",
+          "thu": 4,
+          "tiet_bat_dau": 13,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
           "ma_mon": "BSA12117",
           "ten_mon": "Pháp luật và sở hữu trí tuệ",
           "nhom": "02",
