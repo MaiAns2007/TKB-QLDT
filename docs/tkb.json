@@ -1989,30 +1989,6 @@
           "ten_mon": "Cấu trúc dữ liệu và giải thuật",
           "nhom": "05",
           "giang_vien": "Phạm Tuấn Minh",
-          "phong": "401-A2-401-A2(CS Hà Đông)",
-          "ngay_hoc": "2026-11-24",
-          "thu": 3,
-          "tiet_bat_dau": 3,
-          "so_tiet": 1,
-          "la_day_bu": false
-        },
-        {
-          "ma_mon": "INT1359",
-          "ten_mon": "Toán rời rạc 2",
-          "nhom": "02",
-          "giang_vien": "Nguyễn Hằng  Phương",
-          "phong": "501-A2-501-A2(CS Hà Đông)",
-          "ngay_hoc": "2026-11-24",
-          "thu": 3,
-          "tiet_bat_dau": 10,
-          "so_tiet": 2,
-          "la_day_bu": false
-        },
-        {
-          "ma_mon": "INT1306",
-          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
-          "nhom": "05",
-          "giang_vien": "Phạm Tuấn Minh",
           "phong": "8888888813-Phòng học 13",
           "ngay_hoc": "2026-11-25",
           "thu": 4,
@@ -2097,6 +2073,30 @@
           "ngay_hoc": "2026-12-01",
           "thu": 3,
           "tiet_bat_dau": 1,
+          "so_tiet": 2,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1306",
+          "ten_mon": "Cấu trúc dữ liệu và giải thuật",
+          "nhom": "05",
+          "giang_vien": "Phạm Tuấn Minh",
+          "phong": "401-A2-401-A2(CS Hà Đông)",
+          "ngay_hoc": "2026-12-01",
+          "thu": 3,
+          "tiet_bat_dau": 3,
+          "so_tiet": 1,
+          "la_day_bu": false
+        },
+        {
+          "ma_mon": "INT1359",
+          "ten_mon": "Toán rời rạc 2",
+          "nhom": "02",
+          "giang_vien": "Nguyễn Hằng  Phương",
+          "phong": "501-A2-501-A2(CS Hà Đông)",
+          "ngay_hoc": "2026-12-01",
+          "thu": 3,
+          "tiet_bat_dau": 10,
           "so_tiet": 2,
           "la_day_bu": false
         }
