@@ -2099,6 +2099,18 @@
           "tiet_bat_dau": 10,
           "so_tiet": 2,
           "la_day_bu": false
+        },
+        {
+          "ma_mon": "BSA12117",
+          "ten_mon": "Pháp luật và sở hữu trí tuệ",
+          "nhom": "02",
+          "giang_vien": "",
+          "phong": "HT-A2-Hội trường A2",
+          "ngay_hoc": "2026-12-05",
+          "thu": 7,
+          "tiet_bat_dau": 11,
+          "so_tiet": 3,
+          "la_day_bu": false
         }
       ]
     },
